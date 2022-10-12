@@ -2,7 +2,7 @@
 
 body{
   font:18px Arial, sans-serif;
-  background-image: url('../images/morocco.jpg');
+  background-image: url('../images/food.jpeg');
   background-size: cover;
   background-attachment: fixed;
 }
@@ -78,5 +78,8 @@ p{
 }
 
 table{
-  boarder:1px solid black
+  border:1px solid black;
+  border-collapse: collapse;
+  width: 800px
+  background-color: skyblue;
 }
