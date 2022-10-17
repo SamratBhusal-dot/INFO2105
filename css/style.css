@@ -1,5 +1,16 @@
 @charset "UTF-8";
 
+.monday{
+  border:1px solid black;
+  width: 500px;
+  padding: 20px;
+  margin:20px;
+  background-color: mistyrose;
+}
+
+.warning{
+  color: red;
+}
 body{
   font:18px Arial, sans-serif;
   background-image: url('../images/food.jpeg');
