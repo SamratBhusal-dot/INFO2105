@@ -1,94 +1,111 @@
-@charset "UTF-8";
+/* Colour Palette
+White: #FFFFFF
+Beige: #C5BCAB
+Ivory: #EBEBE0
+Blue: #63B4C9
+Brown: #4C3639
+*/
 
-  @font-face {
-    font-family: SEGOEUI;
-    src: url("../font/SEGOEUI.ttf");
-  }
+/* Structure */
 
-.logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: : center;
-}
-
-body{
-  font-family: SEGOEUI;
-  text-align: center;
+body {
+  margin:0;
   background-color: #EBEBE0;
 }
-    h1{
-      font-size: 3em;
-      text-align: center;
-    }
-    .navigation{
-      font-size: :medium ;
-      text-align: center;
-      background-color: #63B4C9;
-      margin: 30px 0px;
-    }
-  li{
-    display: inline-block;
-    padding: 20px;
-    text-transform: uppercase;
-    font-size: medium;
-  }
 
-      a:link{
-        text-decoration: none;
-        color: #FFFFFF;
-      }
+header {
+  width:100%;
+  text-align: center;
+}
 
-      a:visited{
-        text-decoration: none;
-        color: #FFFFFF;
-      }
-      a:hover{
-        text-decoration: none;
-        color:#FFFFFF;
-      }
-      a:active{
-        text-decoration: none;
-        color: #FFFFFF;
-      }
+main {
+  width:70%;
+  margin:30px auto;
+  background-color: #C5BCAB;
+  padding:30px;
+}
 
-
-  p{
-    font-size:medium;}
-
-    img{display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-  .bodyImage{
-        width: 100%;
-      }
-
-
-   .flex_container{
-  justify-content: center;
+main {
   display: flex;
   flex-direction: row;
-  margin:30px auto;
-  padding:30px;
-  width:70%;
-background-color: #C5BCAB;
-  }
+}
 
-  .flex_container > div{
-  background-color: #FFFFFF;
+section {
+  background-color: #f1f1f1;
+  width: 50%;
   margin: 10px;
-  padding:20px;
-  text-align: center;
-  border: 1px solid #4C3639;
-  width: 50%; }
+  padding: 20px;
+  border: 1px solid black;
+}
 
-  .flex_container >div>img{
-  width: 100%;}
+.featureimg {
+  width: 100%;
+}
 
-  footer{
-  font-size:medium ;
+
+/* Typography */
+
+@font-face {
+    font-family: SEGOEUI;
+    src:
+        url("../fonts/SEGOEUI.ttf");
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
+        url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
+    font-weight: thin;
+    font-style: normal;
+}
+
+body {
+  font-family: SEGOEUI, arial, sans-serif;
+}
+
+footer {
+  font-size: smaller;
+}
+
+/* Navigation */
+
+nav {
+  width:100%;
+  padding:10px;
   text-align: center;
-  margin: 30px;
-  }
+  background-color: #63B4C9;
+}
+
+
+ul {
+  padding:0;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 20px;
+  font-variant: small-caps;
+}
+
+a:link{
+  color:#FFFFFF;
+}
+
+a:visited{
+    color:#EBEBE0;
+}
+
+a:hover{
+    color:#4C3639;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+}
+
+a:active{
+  color:#4C3639;
+  font-weight:bold;
+}
+
+
+/
