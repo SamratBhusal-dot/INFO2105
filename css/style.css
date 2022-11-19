@@ -1,4 +1,4 @@
-/* Colour Palette
+* Colour Palette
 White: #FFFFFF
 Beige: #C5BCAB
 Ivory: #EBEBE0
@@ -23,23 +23,12 @@ main {
   margin:30px auto;
   background-color: #C5BCAB;
   padding:30px;
-}
-
-main {
   display: flex;
   flex-direction: row;
-}
-table{
-  border:1px solid black;
-  border-collapse: collapse;
-  background-color: whitesmoke;
-  width: 80%;
+  overflow: auto;
 }
 
-td{
-  border:1px solid black;
-  padding: 10px;
-}
+
 section {
   background-color: #f1f1f1;
   width: 50%;
@@ -48,8 +37,70 @@ section {
   border: 1px solid black;
 }
 
-.featureimg {
+.menu{
+  width: 33%;
+}
+
+.mainimg {
   width: 100%;
+}
+
+figure{
+  margin:0;
+  padding: 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.enlarge>figure>img{
+  -webkit-transform: scale(1);
+  transform:scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.enlarge:hover>figure>img{
+  -webkit-transform:scale(1.3);
+  transform: scale(1.3);
+}
+
+.blackandwhite>figure>img{
+-webkit-filter:grayscale(100%);
+filter:grayscale(100%);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+}
+
+.blackandwhite:hover>figure>img{
+  webkit-filter:grayscale(0);
+  filter: grayscale(0);
+}
+
+video{
+  width: 100%;
+}
+
+form{
+  text-align: left;
+}
+
+input[type=text]{
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 5px auto 20px auto;
+  width: 100px;
+  height: 25px;
+  padding: 10px;
+}
+
+textarea{
+  resize: none;
+  border: 1px solid grey;
+  border-radius: 4px;
+  margin: 5px 5px 20px 5px;
+  padding: 10px;
+  width: 90%;
+  rows:20;
 }
 
 
@@ -58,7 +109,7 @@ section {
 @font-face {
     font-family: SEGOEUI;
     src:
-        url("../fonts/SEGOEUI.ttf");
+        url("../fonts/SEGOEUI.TTF");
         url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff2) format("woff2"),
         url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.woff) format("woff"),
         url(//c.s-microsoft.com/static/fonts/segoe-ui/west-european/light/latest.ttf) format("truetype");
@@ -68,13 +119,10 @@ section {
 
 body {
   font-family: SEGOEUI, arial, sans-serif;
-  text-align: center;
 }
 
 footer {
   font-size: smaller;
-  margin: 30px;
-  text-align: center;
 }
 
 /* Navigation */
@@ -86,6 +134,9 @@ nav {
   background-color: #63B4C9;
 }
 
+textarea{
+  padding: 10px;
+}
 
 ul {
   padding:0;
@@ -111,102 +162,10 @@ a:visited{
 
 a:hover{
     color:#4C3639;
-    filter: drop-shadow(5px 5px 4px #4444dd);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 
 a:active{
   color:#4C3639;
   font-weight:bold;
-}
-
-@charset "UTF-8";
-
-@font-face {
-  font-family: SEGOEUI;
-  src: url('../fonts/SEGOEUI.TTF') format('truetype');
-}
-
-.logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: : center;
-}
-
-body{
-  text-align: center;
-  font-family:SEGOEUI;
-  background-color: #EBEBE0;
-}
-
-h1{
-  font-size: 3em;
-}
-
-.navigation{
-  font-size: medium;
-  background-color: #63B4C9;
-  margin: 30px 0px;
-  text-align: center;
-}
-
-li{
-  font-size: medium;
-  display: inline-block;
-  padding:20px;
-  text-transform:uppercase;
-}
-
-a:link{
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-a:visited{
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-a:hover{
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-a:active{
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-p{
-  font-size: medium;
-}
-
-.flex_container{
-
-  justify-content: center;
-  display: flex;
-  flex-direction: row;
-  background-color: #C5BCAB;
-  margin:30px auto;
-  padding:30px;
-  width:70%;
-}
-
-.flex_container > div{
-  background-color: #FFFFFF;
-  margin: 10px;
-  padding:20px;
-  text-align: center;
-  border: 1px solid #4C3639;
-  width: 50%;
-}
-
-.flex_container >div>img{
-  width: 100%;
-}
-
-footer{
-  font-size: medium;
-  margin: 30px;
-  text-align: center;
 }
